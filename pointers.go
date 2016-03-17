@@ -27,7 +27,5 @@ func triple(num *int) {
 }
 
 func swap(x, y *int) {
-	t := *x
-	*x = *y
-	*y = t
+	*x, *y = *y, *x
 }
