@@ -11,11 +11,12 @@ func main() {
 	fmt.Println(num)
 
 	a, b := 10, 20
-	fmt.Println("value of a and b", a, b)
+	fmt.Printf("value of a(%d) and b(%d)\n", a, b)
 
 	swap(&a, &b)
 
-	fmt.Println("value of a and b", a, b)
+	fmt.Printf("value of a(%d) and b(%d)\n", a, b)
+
 }
 
 func double(num int)  {
