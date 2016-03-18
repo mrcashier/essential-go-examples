@@ -20,6 +20,14 @@ func (r rect) area() int {
 	return r.width * r.height
 }
 
+type circle struct {
+	ratio int
+}
+
+func (c circle) diameter() float32  {
+	return float32(c.ratio) / 2
+}
+
 func main() {
 	p := point{20, 40}
 
@@ -40,6 +48,9 @@ func main() {
 	}
 
 	fmt.Println(r)
+	fmt.Printf("Area from rectangle %v is %v \n", r, r.area())
 
-	fmt.Printf("Area from rectangle %v is %v", r, r.area())
+	c := circle{55}
+
+	fmt.Printf("Diameter of circle %v is %v", c, c.diameter() )
 }
