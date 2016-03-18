@@ -19,7 +19,7 @@ func main() {
 
 }
 
-func double(num int)  {
+func double(num int) {
 	num *= 2
 }
 

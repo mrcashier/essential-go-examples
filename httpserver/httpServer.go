@@ -3,8 +3,8 @@ package main
 import (
 	"flag"
 	"fmt"
-	"net/http"
 	"log"
+	"net/http"
 )
 
 var port int
@@ -24,7 +24,7 @@ func main() {
 	fmt.Println("Serving files on localhost: %v ", port)
 
 	err := ServeStatic(port)
-	if err!= nil {
+	if err != nil {
 		log.Fatalln(err)
 	}
 }

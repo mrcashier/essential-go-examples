@@ -1,9 +1,9 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"io/ioutil"
-	"encoding/json"
 )
 
 type Config map[string]interface{}
@@ -16,7 +16,6 @@ func (c Config) Age() int {
 	return int(c["age"].(float64))
 }
 
-
 func main() {
 	config, err := LoadConfig("config.json")
 
@@ -27,7 +26,6 @@ func main() {
 	fmt.Println(config)
 	fmt.Println(config.Name())
 	fmt.Println(config.Age())
-
 
 }
 

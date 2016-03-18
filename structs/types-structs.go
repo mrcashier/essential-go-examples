@@ -24,7 +24,7 @@ type circle struct {
 	ratio int
 }
 
-func (c circle) diameter() float32  {
+func (c circle) diameter() float32 {
 	return float32(c.ratio) / 2
 }
 
@@ -52,5 +52,5 @@ func main() {
 
 	c := circle{55}
 
-	fmt.Printf("Diameter of circle %v is %v", c, c.diameter() )
+	fmt.Printf("Diameter of circle %v is %v", c, c.diameter())
 }

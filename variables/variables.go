@@ -40,6 +40,4 @@ func main() {
 
 	fmt.Printf("%d %d", 20, 20)
 
-
-
 }
