@@ -1,5 +1,6 @@
 {
   "name": "Essential Go",
   "author": "Carlos Cajero",
+  "age": 35,
   "tags": ["go", "screencasts", "learning"]
 }
