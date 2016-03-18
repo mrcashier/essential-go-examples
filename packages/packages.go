@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"github.com/mrcashier/test-intellij/packages/pages"
 	"log"
 	"os"
@@ -19,5 +18,9 @@ func main() {
 		log.Fatalln(err)
 	}
 
-	fmt.Println(p)
+	err = p.Render("layout.html", os.Stdout)
+
+	if err != nil {
+		log.Fatalln(err)
+	}
 }
