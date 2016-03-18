@@ -6,6 +6,13 @@ import (
 	"encoding/json"
 )
 
+type Config map[string]interface{}
+
+func (c Config) Name() string {
+	return c["name"].(string)
+	
+}
+
 func main() {
 	config, err := LoadConfig("config.json")
 
@@ -14,11 +21,11 @@ func main() {
 	}
 
 	fmt.Println(config)
-
+	fmt.Println(config.Name())
 
 }
 
-func LoadConfig(path string) (map[string]interface{}, error) {
+func LoadConfig(path string) (Config, error) {
 
 	var m map[string]interface{}
 	data, err := ioutil.ReadFile(path)
