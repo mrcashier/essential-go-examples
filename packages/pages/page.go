@@ -2,10 +2,10 @@ package pages
 
 import (
 	"github.com/russross/blackfriday"
-	"html/template"
 	"io"
 	"io/ioutil"
 	"log"
+	"text/template"
 )
 
 type Page struct {
